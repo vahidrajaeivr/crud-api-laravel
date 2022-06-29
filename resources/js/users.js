@@ -7,6 +7,7 @@ Livewire.on("deleteTriggered", (id, name) => {
 });
 
 Livewire.on("triggerCreate", () => {
+    Livewire.emit("resetForm");
     $("#user-modal").modal("show");
 });
 

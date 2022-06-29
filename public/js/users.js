@@ -15,6 +15,7 @@ Livewire.on("deleteTriggered", function (id, name) {
   }
 });
 Livewire.on("triggerCreate", function () {
+  Livewire.emit("resetForm");
   $("#user-modal").modal("show");
 });
 window.addEventListener("user-saved", function (event) {

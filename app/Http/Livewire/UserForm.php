@@ -13,7 +13,7 @@ class UserForm extends Component
     public $age;
     public $country = 1; // United Kingdom
     public $uuid = null;
-    protected $listeners = ['triggerEdit'];
+    protected $listeners = ['triggerEdit', 'resetForm'];
 
     public function triggerEdit($user)
     {
